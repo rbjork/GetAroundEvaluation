@@ -19,7 +19,8 @@ import java.io.IOException;
 
 import okio.BufferedSink;
 
-
+// Authentication wasn't necessary having the api key.  So this part of app wasn't incorporated.
+// The app launches instead directly into MainActivity
 public class LoginActivity extends AppCompatActivity {
 
     private final String clientId = "grbtxtmsg@gmail.com";

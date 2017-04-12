@@ -12,9 +12,11 @@ import com.getaround.getaroundevalapp.views.PhotoDetailFragment;
 
 
 public class MainActivity extends AppCompatActivity implements GalleryFragment.OnFragmentGalleryInteractionListener, PhotoDetailFragment.onFragmentDetailListener {
-    FragmentManager fm;
-    GalleryFragment gf;
-    PhotoDetailFragment pd;
+
+    private FragmentManager fm;
+    private GalleryFragment gf;
+    private PhotoDetailFragment pd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,14 +30,14 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
     }
 
     @Override
-    public void OnFragmentGalleryInteractionListener(String url) {
+    public void OnFragmentGalleryInteractionListener(String id) {
         FragmentTransaction ft = fm.beginTransaction();
         if(pd == null){
-            pd = PhotoDetailFragment.newInstance(url);
+            pd = PhotoDetailFragment.newInstance(id);
         }else{
-            pd.replacePhoto(url);
+            pd.replacePhoto(id);
         }
-        ft.replace(R.id.framecontainer,pd);
+        ft.replace(R.id.framecontainer,pd).commit();
     }
 
     @Override
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
         if(gf == null){
             gf = GalleryFragment.newInstance();
         }
-        ft.replace(R.id.framecontainer,gf);
+        ft.replace(R.id.framecontainer,gf).commit();
     }
 
 }

@@ -10,6 +10,15 @@ import android.widget.ImageView;
 
 public class PhotoImageView extends ImageView {
     private String image_url;
+    private String photoId;
+
+    public String getPhotoId() {
+        return photoId;
+    }
+
+    public void setPhotoId(String photoId) {
+        this.photoId = photoId;
+    }
 
     public String getImage_url() {
         return image_url;

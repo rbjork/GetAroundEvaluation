@@ -6,8 +6,9 @@
     android:layout_height="wrap_content">
 
     <com.getaround.getaroundevalapp.views.PhotoImageView
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="350px"
+        android:scaleType="fitXY"
         android:layout_weight="1"
         android:id="@+id/imageView"
         android:adjustViewBounds="true"
@@ -16,8 +17,9 @@
     <com.getaround.getaroundevalapp.views.PhotoImageView
         android:layout_alignParentRight="true"
         android:layout_toLeftOf="@+id/imageView"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="350px"
+        android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:layout_weight="1"
         android:id="@+id/imageView2"

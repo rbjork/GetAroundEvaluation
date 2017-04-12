@@ -1,5 +1,7 @@
 package com.getaround.getaroundevalapp.model;
 
+import android.graphics.Bitmap;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -7,6 +9,15 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 
 public class Photo {
+
+    @JsonProperty("category")
+    public int getCategory() {
+        return category;
+    }
+    @JsonProperty("category")
+    public void setCategory(int category) {
+        this.category = category;
+    }
 
     @JsonProperty("id")
     public long getId() {
@@ -43,4 +54,17 @@ public class Photo {
     private String name;
     private String image_url;
     private long id;
+    private int category;
+
+
+
+    public Bitmap getPhotoBitmap() {
+        return photoBitmap;
+    }
+
+    public void setPhotoBitmap(Bitmap photoBitmap) {
+        this.photoBitmap = photoBitmap;
+    }
+
+    private Bitmap photoBitmap;
 }

@@ -86,13 +86,13 @@ public class GalleryFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
         ListView list = (ListView)view.findViewById(R.id.photolist);
-        list.setOnItemClickListener(new ListView.OnItemClickListener(){
+        /*list.setOnItemClickListener(new ListView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 PhotoPair p = (PhotoPair)adapter.getItem(position);
                 int i = view.getId();
             }
-        });
+        });*/
 
         adapter = new photolistadapter(getActivity(),R.layout.photoitempair);
         list.setAdapter(adapter);
@@ -119,8 +119,8 @@ public class GalleryFragment extends Fragment {
         mListener = null;
     }
 
-    public void showDetail(String purl){
-
+    public void showDetail(String id){
+        mListener.OnFragmentGalleryInteractionListener(id);
     }
 
     /**
@@ -138,6 +138,8 @@ public class GalleryFragment extends Fragment {
         void OnFragmentGalleryInteractionListener(String url);
     }
 
+
+    // ImageDownloaderTask code taken from outside resource
     class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap> {
         private final WeakReference<ImageView> imageViewReference;
 
@@ -170,6 +172,7 @@ public class GalleryFragment extends Fragment {
         }
     }
 
+    // downloadBitmap code taken from outside resource
     private Bitmap downloadBitmap(String url) {
         HttpURLConnection urlConnection = null;
         try {
@@ -196,6 +199,7 @@ public class GalleryFragment extends Fragment {
         return null;
     }
 
+
     private class photolistadapter extends ArrayAdapter<PhotoPair> {
 
         public photolistadapter(Context context, int resource) {
@@ -213,15 +217,17 @@ public class GalleryFragment extends Fragment {
             PhotoPair pair = getItem(position);
             PhotoImageView leftimg = (PhotoImageView)row.findViewById(R.id.imageView);
             leftimg.setImage_url(pair.leftPhoto.getImage_url());
+            leftimg.setPhotoId(String.valueOf(pair.leftPhoto.getId()));
             PhotoImageView rightimg = (PhotoImageView)row.findViewById(R.id.imageView2);
             rightimg.setImage_url(pair.rightPhoto.getImage_url());
+            rightimg.setPhotoId(String.valueOf(pair.rightPhoto.getId()));
 
             leftimg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     PhotoImageView pv = (PhotoImageView)v;
-                    String url = pv.getImage_url();
-                    showDetail(url);
+                    String photoid = String.valueOf(pv.getPhotoId());
+                    showDetail(photoid);
                 }
             });
 
@@ -230,8 +236,8 @@ public class GalleryFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     PhotoImageView pv = (PhotoImageView)v;
-                    String url = pv.getImage_url();
-                    showDetail(url);
+                    String photoid = String.valueOf(pv.getPhotoId());
+                    showDetail(photoid);
                 }
             });
 
@@ -273,7 +279,7 @@ public class GalleryFragment extends Fragment {
             StringBuilder result = new StringBuilder();
             try {
 
-                url = new URL("https://api.500px.com/v1/photos/?feature=nature&image_size=4&consumer_key=UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz");
+                url = new URL("https://api.500px.com/v1/photos/?feature=popular&only=nature&consumer_key=UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz");
 
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
@@ -284,7 +290,6 @@ public class GalleryFragment extends Fragment {
 
                 int responseCode = connection.getResponseCode();
                 if (responseCode == 200) {
-
                     InputStream in = new BufferedInputStream(connection.getInputStream());
                     BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
