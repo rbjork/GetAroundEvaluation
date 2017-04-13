@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.fasterxml.jackson.core.JsonParseException;
@@ -59,6 +60,7 @@ public class PhotoDetailFragment extends Fragment {
     private ImageView photoView;
     private TextView phototitle;
     private Button returnButton;
+    private ProgressBar progressBar;
 
     private onFragmentDetailListener mListener;
 
@@ -93,6 +95,7 @@ public class PhotoDetailFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_photo_detail, container, false);
         photoView = (ImageView) v.findViewById(R.id.photoview);
         phototitle = (TextView)v.findViewById(R.id.phototxt);
+        progressBar = (ProgressBar)v.findViewById(R.id.progressBar);
         returnButton = (Button)v.findViewById(R.id.returnbtn);
         returnButton.setOnClickListener(new View.OnClickListener(){
 
@@ -137,7 +140,7 @@ public class PhotoDetailFragment extends Fragment {
     }
 
     // ImageDownloaderTask code taken from outside resource
-    class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap> {
+    class ImageDownloaderTask extends AsyncTask<String, Integer, Bitmap> {
         private final WeakReference<ImageView> imageViewReference;
 
         public ImageDownloaderTask(ImageView imageView) {
@@ -148,6 +151,12 @@ public class PhotoDetailFragment extends Fragment {
         protected Bitmap doInBackground(String... params) {
 
             return downloadBitmap(params[0]);
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            Log.d("PhotoDetailFragment", "progress "+ String.valueOf(values[0]));
+            progressBar.setProgress(values[0]);
         }
 
         @Override
@@ -197,13 +206,19 @@ public class PhotoDetailFragment extends Fragment {
         return null;
     }
 
-    private class DetailAsyncTask extends AsyncTask<String,Void,Photo>{
+    private class DetailAsyncTask extends AsyncTask<String,Integer,Photo>{
         @Override
         protected void onPostExecute(Photo photo) {
             if(photo != null){
                 new ImageDownloaderTask(photoView).execute(photo.getImage_url());
             }
 
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            Log.d("PhotoDetailFragment", "progress "+ String.valueOf(values[0]));
+            progressBar.setProgress(values[0]);
         }
 
         @Override
