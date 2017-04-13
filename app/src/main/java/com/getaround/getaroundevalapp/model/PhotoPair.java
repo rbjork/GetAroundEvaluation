@@ -1,6 +1,7 @@
 package com.getaround.getaroundevalapp.model;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -14,6 +15,7 @@ public class PhotoPair {
 
     public Photo leftPhoto;
     public Photo rightPhoto;
+
 
     public PhotoPair(Photo left, Photo right) {
         leftPhoto = left;
