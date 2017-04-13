@@ -15,6 +15,7 @@ public class PhotoPair {
 
     public Photo leftPhoto;
     public Photo rightPhoto;
+    public Boolean needmore = false;
 
 
     public PhotoPair(Photo left, Photo right) {

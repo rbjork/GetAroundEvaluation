@@ -109,6 +109,9 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
             PhotoPair pair = new PhotoPair(photos.get(i-1),null);
             pairs.add(pair);
         }
+        PhotoPair more = new PhotoPair(null,null);
+        more.needmore = true;
+        pairs.add(more);
 
         Model.getInstance().setPhotoPairs(pairs);
         gf.renderImages(pairs);

@@ -4,7 +4,6 @@ turned out to be unnecessary.  The specification given is the following:
 
 Screen One: Gallery View
 • A grid of square thumbnails pulled from the 500px.com API,arranged two columns wide.
-• You can use the Getaround API Keys:
 • The photos should be pulled from the popular photos list, and filtered to only include photos in the "Nature" category.
 • Note that if you do not filter the list, some photos may contain nudity.
 • While your app is loading the list of popular photos, it should show a loading indicator.
@@ -17,3 +16,9 @@ Screen Two: Photo View
 • Pressing the back button should return to the Gallery View.
 • Bonus Feature (optional): Use a progress indicator to show
 image download progress.
+
+Improvements:
+  1. Replace AsyncTasks making http calls to 500px with Volly (generally better)
+  2. Add more button at bottom of gallery list.  Can be done by adding
+  additional item to list beyond photos(21st row) and using item layout
+  with optional button overlay. The file "photoitempairaux" is intended for that.

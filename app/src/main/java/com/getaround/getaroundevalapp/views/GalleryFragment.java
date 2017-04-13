@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -175,31 +176,37 @@ public class GalleryFragment extends Fragment {
             }
 
             PhotoPair pair = getItem(position);
-            PhotoImageView leftimg = (PhotoImageView)row.findViewById(R.id.imageView);
-            leftimg.setImageBitmap(pair.leftPhoto.getPhotoBitmap());
-            leftimg.setPhotoId(String.valueOf(pair.leftPhoto.getId()));
-            PhotoImageView rightimg = (PhotoImageView)row.findViewById(R.id.imageView2);
-            rightimg.setImageBitmap(pair.rightPhoto.getPhotoBitmap());
-            rightimg.setPhotoId(String.valueOf(pair.rightPhoto.getId()));
+            if(pair.needmore){
 
-            leftimg.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    PhotoImageView pv = (PhotoImageView)v;
-                    String photoid = String.valueOf(pv.getPhotoId());
-                    showDetail(photoid);
+            }else {
+                PhotoImageView leftimg = (PhotoImageView) row.findViewById(R.id.imageView);
+                leftimg.setImageBitmap(pair.leftPhoto.getPhotoBitmap());
+                leftimg.setPhotoId(String.valueOf(pair.leftPhoto.getId()));
+
+                leftimg.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        PhotoImageView pv = (PhotoImageView) v;
+                        String photoid = String.valueOf(pv.getPhotoId());
+                        showDetail(photoid);
+                    }
+                });
+                if(pair.rightPhoto != null) {
+                    PhotoImageView rightimg = (PhotoImageView) row.findViewById(R.id.imageView2);
+                    rightimg.setImageBitmap(pair.rightPhoto.getPhotoBitmap());
+                    rightimg.setPhotoId(String.valueOf(pair.rightPhoto.getId()));
+
+                    rightimg.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+                            PhotoImageView pv = (PhotoImageView) v;
+                            String photoid = String.valueOf(pv.getPhotoId());
+                            showDetail(photoid);
+                        }
+                    });
                 }
-            });
-
-            rightimg.setOnClickListener(new View.OnClickListener(){
-
-                @Override
-                public void onClick(View v) {
-                    PhotoImageView pv = (PhotoImageView)v;
-                    String photoid = String.valueOf(pv.getPhotoId());
-                    showDetail(photoid);
-                }
-            });
+            }
 
             return row;
         }
