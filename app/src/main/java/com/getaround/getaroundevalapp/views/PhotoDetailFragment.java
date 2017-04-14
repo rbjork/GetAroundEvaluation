@@ -134,12 +134,13 @@ public class PhotoDetailFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
+
     public interface onFragmentDetailListener {
         // TODO: Update argument type and name
         void onFragmentDetailListener();
     }
 
-    // ImageDownloaderTask code taken from outside resource
+    // Modified ImageDownloaderTask code taken from outside resource
     class ImageDownloaderTask extends AsyncTask<String, Integer, Bitmap> {
         private final WeakReference<ImageView> imageViewReference;
 

@@ -1,3 +1,10 @@
+/*
+Code created by Marcus Pöhls on December 15 2014, tagged in Development, Android, Retrofit,
+Website: Future Studio , Title: Retrofit - Oauth on Android
+https://futurestud.io/tutorials/oauth-2-on-android-with-retrofit
+ */
+
+
 package com.getaround.getaroundevalapp.authenticate;
 
 import android.text.TextUtils;

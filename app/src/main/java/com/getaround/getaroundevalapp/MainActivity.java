@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
 
 
 
-    // ImageDownloaderTask code taken from outside resource
+    // Modified ImageDownloaderTask code that was taken from outside resource
     class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap> {
         private Photo photo;
         public ImageDownloaderTask(Photo p) {
