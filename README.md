@@ -1,5 +1,5 @@
 The android application code was created in response to a code challenge from GetAround.
-Initially an effort to incorporate a full process of OAuth1 authentication. I went with
+Initially an effort to incorporate a full process of OAuth1 authentication was made. I went with
 the assumption that the authentication part, a part often repeated in other projects, and not the important
 part of the challenge. So I sought to replicate what was available source material online
 But a full OAuth1 authentication turned out to be unnecessary. I left the code in the repository
@@ -21,7 +21,7 @@ Screen Two: Photo View
 • Bonus Feature (optional): Use a progress indicator to show
 image download progress.
 
-Improvements:
+Future Improvements:
   1. Replace AsyncTasks making http calls to 500px with Volly (generally better)
   2. Add more button at bottom of gallery list.  Can be done by adding
   additional item to list beyond photos(11th row) and using item layout
