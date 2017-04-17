@@ -22,7 +22,4 @@ Screen Two: Photo View
 image download progress.
 
 Future Improvements:
-  1. Replace AsyncTasks making http calls to 500px with Volly (generally better)
-  2. Add more button at bottom of gallery list.  Can be done by adding
-  additional item to list beyond photos(11th row) and using item layout
-  with optional button overlay. The layout file "photoitempairaux" is intended for that.
+  1. Replace AsyncTasks making http calls to 500px with Volly (generally better for remote server calls)
