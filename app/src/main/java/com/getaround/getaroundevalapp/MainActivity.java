@@ -42,7 +42,7 @@ import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity implements GalleryFragment.OnFragmentGalleryInteractionListener, PhotoDetailFragment.onFragmentDetailListener {
-
+    private static final String TAG = MainActivity.class.getName();
     private FragmentManager fm;
     private GalleryFragment gf;
     private PhotoDetailFragment pd;
@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
         ft.commit();
 
         countloaded = 0;
-        new SearchImagesTask().execute();
+        new SearchImagesTask().execute("1");
     }
 
     @Override
-    public void OnFragmentGalleryInteractionListener(String id) {
+    public void OnGalleryShowDetailListener(String id) {
         FragmentTransaction ft = fm.beginTransaction();
         if(pd == null){
             pd = PhotoDetailFragment.newInstance(id);
@@ -73,6 +73,15 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
             pd.replacePhoto(id);
         }
         ft.replace(R.id.framecontainer,pd).commit();
+    }
+
+    private int galleryPage = 1;
+
+    @Override
+    public void OnGalleryShowMoreListener(){
+        galleryPage++;
+        gf.setProgress(0);
+        new SearchImagesTask().execute(String.valueOf(galleryPage));
     }
 
     @Override
@@ -189,7 +198,9 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
             StringBuilder result = new StringBuilder();
             try {
 
-                url = new URL("https://api.500px.com/v1/photos/?feature=popular&only=nature&consumer_key=UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz");
+                String page = params[0];
+
+                url = new URL("https://api.500px.com/v1/photos/?feature=popular&only=nature&page="+page+"&consumer_key=UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz");
 
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");

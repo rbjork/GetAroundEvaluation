@@ -125,6 +125,7 @@ public class GalleryFragment extends Fragment {
             progressBar.setVisibility(View.INVISIBLE);
         }
         progressBar.setProgress(prg);
+
     }
 
     @Override
@@ -144,7 +145,7 @@ public class GalleryFragment extends Fragment {
     }
 
     public void showDetail(String id){
-        mListener.OnFragmentGalleryInteractionListener(id);
+        mListener.OnGalleryShowDetailListener(id);
     }
 
     /**
@@ -159,7 +160,8 @@ public class GalleryFragment extends Fragment {
      */
     public interface OnFragmentGalleryInteractionListener {
         // TODO: Update argument type and name
-        void OnFragmentGalleryInteractionListener(String url);
+        void OnGalleryShowDetailListener(String url);
+        void OnGalleryShowMoreListener();
     }
 
 
@@ -178,17 +180,30 @@ public class GalleryFragment extends Fragment {
         public View getView(int position, View convertView, ViewGroup parent) {
             View row = convertView;
             if(row == null){
-                row = LayoutInflater.from(getContext()).inflate(R.layout.photoitempair,parent, false);
+                row = LayoutInflater.from(getContext()).inflate(R.layout.photoitempairaux,parent, false);
             }
 
+            PhotoImageView rightimg = (PhotoImageView) row.findViewById(R.id.imageView2);
+            PhotoImageView leftimg = (PhotoImageView) row.findViewById(R.id.imageView);
+            Button btn = (Button)row.findViewById(R.id.morebutton);
             PhotoPair pair = getItem(position);
             if(pair.needmore){
-
+                Log.d(TAG,"NEED MORE");
+                leftimg.setVisibility(View.INVISIBLE);
+                rightimg.setVisibility(View.INVISIBLE);
+                btn.setVisibility(View.VISIBLE);
+                btn.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v) {
+                        mListener.OnGalleryShowMoreListener();
+                    }
+                });
             }else {
-                PhotoImageView leftimg = (PhotoImageView) row.findViewById(R.id.imageView);
                 leftimg.setImageBitmap(pair.leftPhoto.getPhotoBitmap());
                 leftimg.setPhotoId(String.valueOf(pair.leftPhoto.getId()));
+                leftimg.setVisibility(View.VISIBLE);
 
+                btn.setVisibility(View.INVISIBLE);
                 leftimg.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -198,7 +213,8 @@ public class GalleryFragment extends Fragment {
                     }
                 });
                 if(pair.rightPhoto != null) {
-                    PhotoImageView rightimg = (PhotoImageView) row.findViewById(R.id.imageView2);
+
+                    rightimg.setVisibility(View.VISIBLE);
                     rightimg.setImageBitmap(pair.rightPhoto.getPhotoBitmap());
                     rightimg.setPhotoId(String.valueOf(pair.rightPhoto.getId()));
 

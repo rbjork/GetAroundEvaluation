@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a708f96245f1a2726f734c5f4af93cca32ffab70">
+        sha1="cd35e49e47986853de4b3aa2611ab97a0a5b731b">
         <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_61760dde33dbf6e383079c42b08b6b9ee0df5a25/classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3acc02a7bdbebc2069e3e96968e7db17ced90b47">
+        sha1="b6e0a86fe333b55c0d03d582a75d4daf6943d9bc">
         <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_414d42613c43d551b487b81b82cebaa7d7ba7033/classes.dex" />
     </item>
     <item

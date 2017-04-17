@@ -9,21 +9,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.getaround.getaroundevalapp.views.PhotoImageView
-        android:layout_width="100dp"
-        android:layout_height="350px"
-        android:scaleType="fitXY"
-        android:layout_weight="1"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-     />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.getaround.getaroundevalapp.views.PhotoImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="350px"
-        android:layout_weight="1"
-        android:scaleType="fitXY"
-        android:layout_alignParentRight="true" />
+        <com.getaround.getaroundevalapp.views.PhotoImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350px"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:id="@+id/imageView"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.getaround.getaroundevalapp.views.PhotoImageView
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="350px"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:id="@+id/imageView2"
+            />
+
+    </LinearLayout>
 </RelativeLayout>
