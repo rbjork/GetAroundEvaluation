@@ -3,87 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f334366f8e6c39264505896fa1d26a855f1a690d">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_61760dde33dbf6e383079c42b08b6b9ee0df5a25/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_b344e3fb5abf562e27b833d7a90ae53027777bfc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.2.0_9bf9146df892a4b79039dfe6267f78cc6165633f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.2.0_77e2b96768e23970f2a1a5da8036b9056bf329f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.2.0_025a64590c156b4782229baf860f6667d41e234e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.2.0_c818aef106dd4e6bcaedd418a40c7a7eeaeff53f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_a0841f4c3f252f32560da5ad10fe729c374f3b78/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_7778b47c20080f5fe3df0440052ae42383512600/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.2.0_d823d9233a8bab5e6b76df3a4223580ba4add318/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/libs/jackson-annotations-2.1.4.jar"
         jumboMode="true"
         optimize="true"
@@ -93,147 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.2.0_327a9d4bf131b8177d088e1412a3bca3b5d3c537/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/libs/jackson-annotations-2.1.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="76b956e45e19e4e081a9c52a68a3c078e3b2cf17">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-annotations-2.1.4_efbc678cbe2abf02c1c1c7924014abc33e88ab88/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_b756fd6368d8d75fb0cb7d9d485c06fb4b82d760/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_3659e674a0bfd18d8e6f2aa04ae359f0e067adf3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/libs/jackson-core-2.1.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="08896e10f8b07918b60c835b45a05507fa213e84">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-core-2.1.4_f2fbf5b5ca53998ae8a11c7bd36b3fd2e1b31f8a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_8255f8ea6e9ac8a8d204580445212cfe0dc32992/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_f9b4a553e0d1e47c6f0893ab9999b2e8aa3e60a7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.4.0_e93848e3aa8c754223694b980c69a1e30ebb5486/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.2.0_118037013aaeb7b7fa6f1f5b89d1760d2b3b28fb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="13a2ce681f88eae28d237b1458c4ed7a2f2a78eb">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d3386df1b925608a6f0c9e14bdabd3df22af70fa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f03f363e3af6f865cfa10fd760f10653f2bcb40">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_414d42613c43d551b487b81b82cebaa7d7ba7033/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_76b616b1a92290814245248ced699873c262953a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/libs/jackson-core-2.1.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="08896e10f8b07918b60c835b45a05507fa213e84">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-core-2.1.4_488a435f556f8f16ada1df4dd2a3292cd010b74a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_f449cb7604da079e3eb01fd08cd7d1903bb0dc59/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.2.0_7130f65021221f7b6941b1392c9e57da1e26580c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_a928444f23d6f5401c0ef6c5a98e5e14aaa858ad/classes.dex" />
+        sha1="a708f96245f1a2726f734c5f4af93cca32ffab70">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_61760dde33dbf6e383079c42b08b6b9ee0df5a25/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -243,15 +27,6 @@
         revision="25.0.2"
         sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
         <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.2.0_5e3c13c42d194e369ee01b7459575db453cdfac7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8dc2b322a5a1027771b4ab130515fe5c30528847">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_33723e6f044bb7146815f27ba42d927d4ebb07a3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -269,16 +44,52 @@
         optimize="true"
         revision="25.0.2"
         sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_2f172645dd71e7febbda7c967c321d9ded4ef3a6/classes.dex" />
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_2f172645dd71e7febbda7c967c321d9ded4ef3a6/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/libs/jackson-databind-2.1.4.jar"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="61d1e5aaf474462b0c9bfef8aeb6a7205bd56a90">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-databind-2.1.4_d772ec4dfb9d8fbe2518dc5e1b6d75fcdd846eaa/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.2.0_77e2b96768e23970f2a1a5da8036b9056bf329f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_b756fd6368d8d75fb0cb7d9d485c06fb4b82d760/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.2.0_c818aef106dd4e6bcaedd418a40c7a7eeaeff53f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_3659e674a0bfd18d8e6f2aa04ae359f0e067adf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_7778b47c20080f5fe3df0440052ae42383512600/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -291,12 +102,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.2.0_a287d622d0d8a1aa50c5380092add7975c779be0/classes.dex" />
+        sha1="3acc02a7bdbebc2069e3e96968e7db17ced90b47">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_414d42613c43d551b487b81b82cebaa7d7ba7033/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_8255f8ea6e9ac8a8d204580445212cfe0dc32992/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_76b616b1a92290814245248ced699873c262953a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/libs/jackson-core-2.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="08896e10f8b07918b60c835b45a05507fa213e84">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-core-2.1.4_488a435f556f8f16ada1df4dd2a3292cd010b74a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -305,16 +143,52 @@
         optimize="true"
         revision="25.0.2"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_8ed402276a4080e1ca9debc8b1f451714b266e36/classes.dex" />
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_8ed402276a4080e1ca9debc8b1f451714b266e36/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvalApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.2.0_b4551a57c69a2920020f5d4287a431412eecb86a/classes.dex" />
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_f9b4a553e0d1e47c6f0893ab9999b2e8aa3e60a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.2.0_d823d9233a8bab5e6b76df3a4223580ba4add318/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.2.0_7130f65021221f7b6941b1392c9e57da1e26580c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.4.0_e93848e3aa8c754223694b980c69a1e30ebb5486/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ronaldbjork/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_a928444f23d6f5401c0ef6c5a98e5e14aaa858ad/classes.dex" />
     </item>
 
 </items>

@@ -89,6 +89,8 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
     private int countloaded;
     private void loadBitmaps(List<Photo> photos){
         this.photos = photos;
+        countloaded = 0;
+        gf.setProgress(0);
         for(Photo p : photos){
             String url = p.getImage_url();
             new ImageDownloaderTask(p).execute(url);
@@ -105,10 +107,12 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
             pairs.add(pair);
             i = i + 2;
         }
+
         if(i < photos.size()-1){
             PhotoPair pair = new PhotoPair(photos.get(i-1),null);
             pairs.add(pair);
         }
+
         PhotoPair more = new PhotoPair(null,null);
         more.needmore = true;
         pairs.add(more);

@@ -96,7 +96,7 @@ public class GalleryFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
         list = (ListView)view.findViewById(R.id.photolist);
         progressBar = (ProgressBar)view.findViewById(R.id.progressBar);
-
+        progressBar.setProgress(0);
         adapter = new photolistadapter(getActivity(),R.layout.photoitempair);
         if(pairs != null)adapter.addAll(pairs);
         list.setAdapter(adapter);
@@ -118,6 +118,12 @@ public class GalleryFragment extends Fragment {
 
     public void setProgress(double progress){
         int prg = (int)(100*progress);
+        Log.d("Gallery progress",String.valueOf(prg));
+        if(prg == 0){
+            progressBar.setVisibility(View.VISIBLE);
+        }else if(prg >= 90){
+            progressBar.setVisibility(View.INVISIBLE);
+        }
         progressBar.setProgress(prg);
     }
 

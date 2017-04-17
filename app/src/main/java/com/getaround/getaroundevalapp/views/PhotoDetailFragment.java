@@ -142,6 +142,7 @@ public class PhotoDetailFragment extends Fragment {
 
     // Modified ImageDownloaderTask code taken from outside resource
     class ImageDownloaderTask extends AsyncTask<String, Integer, Bitmap> {
+
         private final WeakReference<ImageView> imageViewReference;
 
         public ImageDownloaderTask(ImageView imageView) {
@@ -150,14 +151,14 @@ public class PhotoDetailFragment extends Fragment {
 
         @Override
         protected Bitmap doInBackground(String... params) {
-
+            publishProgress(75);
             return downloadBitmap(params[0]);
         }
 
+
         @Override
         protected void onProgressUpdate(Integer... values) {
-            Log.d("PhotoDetailFragment", "progress "+ String.valueOf(values[0]));
-            progressBar.setProgress(values[0]);
+            super.onProgressUpdate(values[0]);
         }
 
         @Override
@@ -165,7 +166,7 @@ public class PhotoDetailFragment extends Fragment {
             if (isCancelled()) {
                 bitmap = null;
             }
-
+            if(progressBar != null)progressBar.setProgress(90);
             if (imageViewReference != null) {
                 ImageView imageView = imageViewReference.get();
                 if (imageView != null) {
@@ -174,6 +175,7 @@ public class PhotoDetailFragment extends Fragment {
                     } else {
                         Drawable placeholder = imageView.getContext().getResources().getDrawable(R.drawable.ic_launcher);
                         imageView.setImageDrawable(placeholder);
+                        progressBar.setVisibility(View.INVISIBLE);
                     }
                 }
             }
@@ -212,15 +214,23 @@ public class PhotoDetailFragment extends Fragment {
         protected void onPostExecute(Photo photo) {
             if(photo != null){
                 new ImageDownloaderTask(photoView).execute(photo.getImage_url());
+                if(progressBar != null)progressBar.setProgress(40);
             }
 
         }
 
         @Override
-        protected void onProgressUpdate(Integer... values) {
-            Log.d("PhotoDetailFragment", "progress "+ String.valueOf(values[0]));
-            progressBar.setProgress(values[0]);
+        protected void onPreExecute() {
+            if(progressBar != null)progressBar.setVisibility(View.VISIBLE);
         }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            Log.d("DetailAsyncTask","onProgressUpdate");
+            if(progressBar != null)progressBar.setProgress(values[0]);
+            super.onProgressUpdate(values);
+        }
+
 
         @Override
         protected Photo doInBackground(String... params) {
@@ -229,6 +239,7 @@ public class PhotoDetailFragment extends Fragment {
             Photo photo = null;
             try {
 
+                publishProgress(10);
                 URL url = new URL("https://api.500px.com/v1/photos/" + photoId + "/?image_size=3&consumer_key=UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz");
               //  URL url = new URL("https://api.500px.com/v1/photos/207340747/?image_size=3&consumer_key=UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -241,7 +252,7 @@ public class PhotoDetailFragment extends Fragment {
                 int responseCode = connection.getResponseCode();
 
                 if (responseCode == 200) {
-
+                    publishProgress(20);
                     InputStream in = new BufferedInputStream(connection.getInputStream());
                     BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
@@ -256,6 +267,7 @@ public class PhotoDetailFragment extends Fragment {
                         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
                         JSONObject jr = new JSONObject(result.toString());
                         ja = jr.getJSONObject("photo");
+                        publishProgress(25);
                         photo = mapper.readValue(ja.toString(), new TypeReference<Photo>(){});
                     } catch (JSONException e) {
                         e.printStackTrace();
