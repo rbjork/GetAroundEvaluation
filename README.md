@@ -23,3 +23,5 @@ image download progress.
 
 Future Improvements:
   1. Replace AsyncTasks making http calls to 500px with Volly (generally better for remote server calls)
+  2. Move remote calls to an IntentService. Better when there's more than one activity and slow or intermittent
+  connectivity.
