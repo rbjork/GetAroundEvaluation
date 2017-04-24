@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements GalleryFragment.O
             i = i + 2;
         }
 
-        if(i < photos.size()-1){
+        if(i < photos.size()-1){ // there is an odd number with photos so add blank
             PhotoPair pair = new PhotoPair(photos.get(i-1),null);
             pairs.add(pair);
         }

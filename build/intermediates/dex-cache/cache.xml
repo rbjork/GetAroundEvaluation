@@ -84,6 +84,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_664379247abcf37aef846609a06ac20bb72c8d69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,21 +102,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4d9ffd73ff9fb0051e0fa4f0cb74692b6348ddcd">
+        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_414d42613c43d551b487b81b82cebaa7d7ba7033/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/libs/jackson-databind-2.1.4.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="61d1e5aaf474462b0c9bfef8aeb6a7205bd56a90">
         <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-databind-2.1.4_69e3f9a33f78fcc71e56e94f3e39c1e24ff16dd2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b6e0a86fe333b55c0d03d582a75d4daf6943d9bc">
-        <dex dex="/Users/ronaldbjork/Documents/codetests/GetAround/dev/GetAroundEvaluation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_414d42613c43d551b487b81b82cebaa7d7ba7033/classes.dex" />
     </item>
     <item
         is-multidex="true"

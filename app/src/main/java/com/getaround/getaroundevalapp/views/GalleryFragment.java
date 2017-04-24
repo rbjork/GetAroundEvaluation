@@ -187,7 +187,8 @@ public class GalleryFragment extends Fragment {
             PhotoImageView leftimg = (PhotoImageView) row.findViewById(R.id.imageView);
             Button btn = (Button)row.findViewById(R.id.morebutton);
             PhotoPair pair = getItem(position);
-            if(pair.needmore){
+            Log.d(TAG,"Position="+String.valueOf(position));
+            if(position == 10){
                 Log.d(TAG,"NEED MORE");
                 leftimg.setVisibility(View.INVISIBLE);
                 rightimg.setVisibility(View.INVISIBLE);
